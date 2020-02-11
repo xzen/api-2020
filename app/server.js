@@ -22,23 +22,23 @@ class Server {
 
     connect.on('error', (err) => {
       setTimeout(() => {
-        console.log('[ERROR] stream mentions api dbConnect() -> mongodb error')
+        console.log('[ERROR] api dbConnect() -> mongodb error')
         this.connect = this.dbConnect(host)
       }, 5000)
 
-      console.error(`[ERROR] stream mentions api dbConnect() -> ${err}`)
+      console.error(`[ERROR] api dbConnect() -> ${err}`)
     })
 
     connect.on('disconnected', () => {
       setTimeout(() => {
-        console.log('[DISCONNECTED] stream mentions api dbConnect() -> mongodb disconnected')
+        console.log('[DISCONNECTED] api dbConnect() -> mongodb disconnected')
         this.connect = this.dbConnect(host)
       }, 5000) 
     })
 
     process.on('SIGINT', () => {
       connect.close(() => {
-        console.log('[API END PROCESS] stream mentions api dbConnect() -> close mongodb connection ')
+        console.log('[API END PROCESS] api dbConnect() -> close mongodb connection ')
         process.exit(0)
       })
     })
@@ -58,7 +58,7 @@ class Server {
    * routes
    */
   routes () {
-    new routes.users.Create(this.app)
+    new routes.users.Create(this.app, this.connect)
     new routes.users.Show(this.app, this.connect)
     new routes.users.Update(this.app)
     new routes.users.Delete(this.app)
