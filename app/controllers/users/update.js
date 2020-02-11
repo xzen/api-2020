@@ -1,4 +1,4 @@
-const users = require('../../models/');
+const users = require('../../models/')
 const check = require('./payload-validator/update.js')
 const validator = require('node-validator')
 
@@ -20,7 +20,7 @@ class Update {
     this.app.put('/user/update/:id', validator.express(check), (req, res) => {
       try {
         const { id } = req.params
-        const { body } = req
+        const { body } = req
         const user = users.find(user => user.id === id) || false
 
         if (!user) {

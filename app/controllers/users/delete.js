@@ -1,4 +1,4 @@
-const users = require('../../models/');
+const users = require('../../models/')
 
 /**
  * Create
@@ -17,9 +17,9 @@ class Delete {
   middleware () {
     this.app.delete('/user/delete/:id', (req, res) => {
       try {
-        const { id } = req.params;
+        const { id } = req.params
 
-        res.status(200).json(users.map(user => user.id != id ? user : false))
+        res.status(200).json(users.map(user => user.id !== id ? user : false))
       } catch (err) {
         res.status(500).json({
           'code': 500,

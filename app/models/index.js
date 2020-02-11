@@ -15,7 +15,7 @@ module.exports = [{
   'street_name': 'de cambrai',
   'phone': '0606060606',
   'image_profil': 'https://www.mediacritik.com/wp-content/uploads/2019/04/rs_1024x759-170407142939-1024.Peter-Dinklage-Game-of-Thrones.kg_.040717.jpg'
-},{
+}, {
   'id': '3hdhd2838',
   'first_name': 'Cyril',
   'last_name': 'Vimard',
@@ -32,7 +32,7 @@ module.exports = [{
   'street_name': 'de cambrai',
   'phone': '0606060606',
   'image_profil': 'https://www.mediacritik.com/wp-content/uploads/2019/04/rs_1024x759-170407142939-1024.Peter-Dinklage-Game-of-Thrones.kg_.040717.jpg'
-},{
+}, {
   'id': '12483hdhd8',
   'first_name': 'Cyril',
   'last_name': 'Vimard',
@@ -49,7 +49,7 @@ module.exports = [{
   'street_name': 'de cambrai',
   'phone': '0606060606',
   'image_profil': 'https://www.mediacritik.com/wp-content/uploads/2019/04/rs_1024x759-170407142939-1024.Peter-Dinklage-Game-of-Thrones.kg_.040717.jpg'
-},{
+}, {
   'id': '1243hd2838',
   'first_name': 'Cyril',
   'last_name': 'Vimard',
@@ -66,7 +66,7 @@ module.exports = [{
   'street_name': 'de cambrai',
   'phone': '0606060606',
   'image_profil': 'https://www.mediacritik.com/wp-content/uploads/2019/04/rs_1024x759-170407142939-1024.Peter-Dinklage-Game-of-Thrones.kg_.040717.jpg'
-},{
+}, {
   'id': '124hd2838',
   'first_name': 'Cyril',
   'last_name': 'Vimard',
@@ -83,7 +83,7 @@ module.exports = [{
   'street_name': 'de cambrai',
   'phone': '0606060606',
   'image_profil': 'https://www.mediacritik.com/wp-content/uploads/2019/04/rs_1024x759-170407142939-1024.Peter-Dinklage-Game-of-Thrones.kg_.040717.jpg'
-},{
+}, {
   'id': 'ssd2838',
   'first_name': 'Cyril',
   'last_name': 'Vimard',
@@ -100,4 +100,4 @@ module.exports = [{
   'street_name': 'de cambrai',
   'phone': '0606060606',
   'image_profil': 'https://www.mediacritik.com/wp-content/uploads/2019/04/rs_1024x759-170407142939-1024.Peter-Dinklage-Game-of-Thrones.kg_.040717.jpg'
-}];
+}]
