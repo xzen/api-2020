@@ -16,7 +16,7 @@ class Create {
    * middleware
    */
   middleware () {
-    this.app.post('/users/create', (req, res) => {
+    this.app.post('/user/create', (req, res) => {
       try {
         const userModel = new this.UserModel(req.body)
 

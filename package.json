@@ -4,10 +4,10 @@
   "description": "## Overview It's CRUDS api for managed all users.",
   "main": "index.js",
   "scripts": {
-    "build": "yarn install && eslint ./app/* index.js && yarn start",
-    "start": "eslint ./app/* index.js && node index.js",
+    "build": "yarn install && eslint ./app/* ./test/* index.js && yarn start",
+    "start": "eslint ./app/* ./test/* index.js && node index.js",
     "test": "mocha",
-    "lint": "eslint ./app/* index.js"
+    "lint": "eslint ./app/* ./test/* index.js"
   },
   "repository": {
     "type": "git",
