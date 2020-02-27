@@ -1,8 +1,9 @@
 const express = require('express')
-const routes = require('./controllers/routes.js')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const cors = require('cors')
+
+const routes = require('./controllers/routes.js')
 
 /**
  * Server
@@ -52,14 +53,17 @@ class Server {
    */
   middleware () {
     this.app.use(cors())
-    this.app.use(bodyParser.urlencoded({ 'extended': true }))
     this.app.use(bodyParser.json())
+    this.app.use(bodyParser.urlencoded({ 'extended': true }))
   }
 
   /**
    * routes
    */
   routes () {
+    new routes.Users(this.app, this.connect)
+    new routes.Products(this.app, this.connect)
+
     this.app.use((req, res) => {
       res.status(404).json({
         'code': 404,
